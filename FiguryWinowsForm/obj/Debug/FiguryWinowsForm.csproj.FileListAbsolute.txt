@@ -1,0 +1,10 @@
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\bin\Debug\FiguryWinowsForm.exe.config
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\bin\Debug\FiguryWinowsForm.exe
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\bin\Debug\FiguryWinowsForm.pdb
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.MainForm.resources
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.Properties.Resources.resources
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.csproj.GenerateResource.cache
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.csproj.CoreCompileInputs.cache
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.exe
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.pdb
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.FiguresForm.resources
