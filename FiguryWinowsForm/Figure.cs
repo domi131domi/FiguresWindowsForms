@@ -9,7 +9,13 @@ namespace MDIApp
 {
     public class Figure
     {
-        string Name;
-        string Surname;
+        public string Name;
+        public string Surname;
+
+        public Figure(string Name, string Surname)
+        {
+            this.Name = Name;
+            this.Surname = Surname;
+        }
     }
 }

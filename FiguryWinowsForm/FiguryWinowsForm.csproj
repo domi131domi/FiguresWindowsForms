@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Document.cs" />
     <Compile Include="Figure.cs" />
+    <Compile Include="FigureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FigureForm.Designer.cs">
+      <DependentUpon>FigureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FiguresForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FigureForm.resx">
+      <DependentUpon>FigureForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiguresForm.resx">
       <DependentUpon>FiguresForm.cs</DependentUpon>
     </EmbeddedResource>

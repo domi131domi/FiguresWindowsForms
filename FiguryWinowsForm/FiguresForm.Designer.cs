@@ -32,15 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiguresForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.edycjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dodajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.FiguresListView = new System.Windows.Forms.ListView();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FiguresListView = new System.Windows.Forms.ListView();
             this.ColumnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeaderSurname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
@@ -55,7 +55,7 @@
             this.edycjaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(452, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(452, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,13 +67,19 @@
             this.edycjaToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.edycjaToolStripMenuItem.Text = "Edycja";
             // 
+            // dodajToolStripMenuItem
+            // 
+            this.dodajToolStripMenuItem.Name = "dodajToolStripMenuItem";
+            this.dodajToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.dodajToolStripMenuItem.Text = "Dodaj";
+            // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 30);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(452, 47);
             this.toolStrip1.TabIndex = 1;
@@ -107,11 +113,24 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(120, 76);
             // 
-            // dodajToolStripMenuItem
+            // addToolStripMenuItem
             // 
-            this.dodajToolStripMenuItem.Name = "dodajToolStripMenuItem";
-            this.dodajToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.dodajToolStripMenuItem.Text = "Dodaj";
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.addToolStripMenuItem.Text = "Dodaj";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.editToolStripMenuItem.Text = "Edytuj";
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.removeToolStripMenuItem.Text = "Usuń";
             // 
             // FiguresListView
             // 
@@ -121,30 +140,12 @@
             this.FiguresListView.ContextMenuStrip = this.contextMenuStrip1;
             this.FiguresListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FiguresListView.HideSelection = false;
-            this.FiguresListView.Location = new System.Drawing.Point(0, 75);
+            this.FiguresListView.Location = new System.Drawing.Point(0, 77);
             this.FiguresListView.Name = "FiguresListView";
-            this.FiguresListView.Size = new System.Drawing.Size(452, 252);
+            this.FiguresListView.Size = new System.Drawing.Size(452, 250);
             this.FiguresListView.TabIndex = 3;
             this.FiguresListView.UseCompatibleStateImageBehavior = false;
             this.FiguresListView.View = System.Windows.Forms.View.Details;
-            // 
-            // addToolStripMenuItem
-            // 
-            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
-            this.addToolStripMenuItem.Text = "Dodaj";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
-            this.editToolStripMenuItem.Text = "Edytuj";
-            // 
-            // removeToolStripMenuItem
-            // 
-            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
-            this.removeToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
-            this.removeToolStripMenuItem.Text = "Usuń";
             // 
             // ColumnHeaderName
             // 
@@ -168,6 +169,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FiguresForm";
             this.Text = "FiguresForm";
+            this.Load += new System.EventHandler(this.FigutesForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
