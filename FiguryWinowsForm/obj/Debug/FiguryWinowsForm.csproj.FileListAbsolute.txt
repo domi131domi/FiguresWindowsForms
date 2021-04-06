@@ -8,5 +8,6 @@ D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.csproj.
 D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.exe
 D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.pdb
 D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.FiguresForm.resources
-D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.csprojAssemblyReference.cache
 D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.FigureForm.resources
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.FigureTypeControl.resources
+D:\Projekty\FiguryWinowsForm\FiguryWinowsForm\obj\Debug\FiguryWinowsForm.csprojAssemblyReference.cache

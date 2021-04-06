@@ -13,7 +13,7 @@ namespace FiguryWinowsForm
 {
     public partial class MainForm : Form
     {
-        Document document = new Document();
+        FiguresDocument document = new FiguresDocument();
 
         public MainForm()
         {

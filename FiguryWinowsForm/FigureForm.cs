@@ -1,46 +1,57 @@
 ﻿using MDIApp;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FiguryWinowsForm
 {
     public partial class FigureForm : Form
     {
-        private Figure figure;
-        private List<Figure> figures;
 
-        public string FigureName
+        public long X
         {
-            get { return textBox1.Text; }
+            get { long res; return long.TryParse(Xtb.Text, out res) ? res : throw new Exception("Cannot convert string to long"); }
         }
 
-        public string FigureSurname
+        public long Y
         {
-            get { return textBox2.Text; }
+            get { long res; return long.TryParse(Ytb.Text, out res) ? res : throw new Exception("Cannot convert string to long"); }
+        }
+        public long SurfaceArea
+        {
+            get { long res; return long.TryParse(SareaTb.Text, out res) ? res : throw new Exception("Cannot convert string to long"); }
+        }
+        public string Label
+        {
+            get { return LabelTb.Text; }
+        }
+        public string Color
+        {
+            get { return ColorTb.Text; }
+        }
+        public FigureType Type
+        {
+            get { return figureTypeControl1.type; }
         }
 
-        public FigureForm(Figure figure, List<Figure> figures)
+        public FigureForm(Figure figure)
         {
             InitializeComponent();
-            this.figure = figure;
-            this.figures = figures;
+            if (figure != null)
+            {
+                Xtb.Text = figure.x.ToString();
+                Ytb.Text = figure.y.ToString();
+                LabelTb.Text = figure.label;
+                ColorTb.Text = figure.color;
+                figureTypeControl1.type = figure.type;
+                figureTypeControl1.UpdateImage();
+                SareaTb.Text = figure.surfaceArea.ToString();
+                button1.Text = "Edytuj";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
