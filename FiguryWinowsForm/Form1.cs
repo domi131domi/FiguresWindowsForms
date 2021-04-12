@@ -20,16 +20,6 @@ namespace FiguryWinowsForm
             InitializeComponent();
         }
 
-        private void winowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             FiguresForm figuresForm = new FiguresForm(document);

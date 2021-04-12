@@ -45,7 +45,7 @@ namespace FiguryWinowsForm
                 figureTypeControl1.Type = figure.type;
                 figureTypeControl1.UpdateImage();
                 SareaTb.Text = figure.surfaceArea.ToString();
-                button1.Text = "Edytuj";
+                Addbtn.Text = "Edytuj";
             }
         }
 

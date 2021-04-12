@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Button = new System.Windows.Forms.Button();
+            this.Typebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Button
+            // Typebtn
             // 
-            this.Button.BackgroundImage = global::FiguryWinowsForm.Properties.Resources.circle;
-            this.Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Button.Location = new System.Drawing.Point(10, 10);
-            this.Button.Name = "Button";
-            this.Button.Size = new System.Drawing.Size(80, 80);
-            this.Button.TabIndex = 0;
-            this.Button.UseVisualStyleBackColor = true;
-            this.Button.Click += new System.EventHandler(this.Button_Click);
+            this.Typebtn.BackgroundImage = global::FiguryWinowsForm.Properties.Resources.circle;
+            this.Typebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Typebtn.Location = new System.Drawing.Point(10, 10);
+            this.Typebtn.Name = "Typebtn";
+            this.Typebtn.Size = new System.Drawing.Size(80, 80);
+            this.Typebtn.TabIndex = 0;
+            this.Typebtn.UseVisualStyleBackColor = true;
+            this.Typebtn.Click += new System.EventHandler(this.Button_Click);
             // 
             // FigureTypeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Button);
+            this.Controls.Add(this.Typebtn);
             this.Name = "FigureTypeControl";
             this.Size = new System.Drawing.Size(100, 100);
             this.ResumeLayout(false);
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Button;
+        private System.Windows.Forms.Button Typebtn;
     }
 }

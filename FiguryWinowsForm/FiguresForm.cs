@@ -122,7 +122,7 @@ namespace FiguryWinowsForm
 
         private void UpdateFiguresCount()
         {
-            statusStrip1.Text = FiguresListView.Items.Count.ToString();
+            statusStrip.Text = FiguresListView.Items.Count.ToString();
         }
 
         private void UpdateItem(ListViewItem item)
@@ -156,14 +156,14 @@ namespace FiguryWinowsForm
 
         private void FiguresForm_Activated(object sender, EventArgs e)
         {
-            ToolStripManager.Merge(toolStrip1, ((MainForm)MdiParent).toolStrip1);
-            ToolStripManager.Merge(statusStrip1, ((MainForm)MdiParent).statusStrip1);
+            ToolStripManager.Merge(toolStrip, ((MainForm)MdiParent).toolStrip);
+            ToolStripManager.Merge(statusStrip, ((MainForm)MdiParent).statusStrip);
         }
 
         private void FiguresForm_Deactivated(object sender, EventArgs e)
         {
-            ToolStripManager.RevertMerge(((MainForm)MdiParent).toolStrip1, toolStrip1);
-            ToolStripManager.RevertMerge(((MainForm)MdiParent).statusStrip1, statusStrip1);
+            ToolStripManager.RevertMerge(((MainForm)MdiParent).toolStrip, toolStrip);
+            ToolStripManager.RevertMerge(((MainForm)MdiParent).statusStrip, statusStrip);
         }
 
         private void FiguresForm_SelectedIndexChanged(object sender, EventArgs e)

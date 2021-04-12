@@ -47,15 +47,15 @@ namespace FiguryWinowsForm
         {
             if (type == FigureType.Circle)
             {
-                Button.BackgroundImage = Properties.Resources.circle;
+                Typebtn.BackgroundImage = Properties.Resources.circle;
             }
             else if (type == FigureType.Rectangle)
             {
-                Button.BackgroundImage = Properties.Resources.rectangle;
+                Typebtn.BackgroundImage = Properties.Resources.rectangle;
             }
             else if (type == FigureType.Triangle)
             {
-                Button.BackgroundImage = Properties.Resources.triangle;
+                Typebtn.BackgroundImage = Properties.Resources.triangle;
             }
         }
     }

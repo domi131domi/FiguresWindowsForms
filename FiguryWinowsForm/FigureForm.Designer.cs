@@ -40,15 +40,15 @@
             this.ColorTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Addbtn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.figureTypeControl1 = new FiguryWinowsForm.FigureTypeControl();
             this.errorProviderX = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderLabel = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderY = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderSurface = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderColor = new System.Windows.Forms.ErrorProvider(this.components);
+            this.figureTypeControl1 = new FiguryWinowsForm.FigureTypeControl();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderX)).BeginInit();
@@ -194,17 +194,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(337, 280);
             this.tableLayoutPanel1.TabIndex = 12;
             // 
-            // button1
+            // Addbtn
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Location = new System.Drawing.Point(127, 234);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Dodaj";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Addbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Addbtn.Location = new System.Drawing.Point(127, 234);
+            this.Addbtn.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
+            this.Addbtn.Name = "Addbtn";
+            this.Addbtn.Size = new System.Drawing.Size(81, 23);
+            this.Addbtn.TabIndex = 2;
+            this.Addbtn.Text = "Dodaj";
+            this.Addbtn.UseVisualStyleBackColor = true;
+            this.Addbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -223,7 +223,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Addbtn, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.figureTypeControl1, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(343, 0);
@@ -234,16 +234,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(248, 280);
             this.tableLayoutPanel2.TabIndex = 14;
-            // 
-            // figureTypeControl1
-            // 
-            this.figureTypeControl1.CausesValidation = false;
-            this.figureTypeControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.figureTypeControl1.Location = new System.Drawing.Point(127, 28);
-            this.figureTypeControl1.Name = "figureTypeControl1";
-            this.figureTypeControl1.Size = new System.Drawing.Size(118, 99);
-            this.figureTypeControl1.TabIndex = 5;
-            this.figureTypeControl1.Type = FiguryWinowsForm.FigureType.Rectangle;
             // 
             // errorProviderX
             // 
@@ -264,6 +254,16 @@
             // errorProviderColor
             // 
             this.errorProviderColor.ContainerControl = this;
+            // 
+            // figureTypeControl1
+            // 
+            this.figureTypeControl1.CausesValidation = false;
+            this.figureTypeControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.figureTypeControl1.Location = new System.Drawing.Point(127, 28);
+            this.figureTypeControl1.Name = "figureTypeControl1";
+            this.figureTypeControl1.Size = new System.Drawing.Size(118, 99);
+            this.figureTypeControl1.TabIndex = 5;
+            this.figureTypeControl1.Type = FiguryWinowsForm.FigureType.Rectangle;
             // 
             // FigureForm
             // 
@@ -302,7 +302,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private FigureTypeControl figureTypeControl1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ErrorProvider errorProviderX;
