@@ -12,7 +12,13 @@ namespace FiguryWinowsForm
 {
     public partial class FigureTypeControl : UserControl
     {
-        public FigureType type { get; set; }
+        private FigureType type;
+        [BrowsableAttribute(true)]
+        public FigureType Type
+        {
+            get { return type; }
+            set { type = value; UpdateImage();  }
+        }
 
         public FigureTypeControl()
         {
@@ -41,15 +47,15 @@ namespace FiguryWinowsForm
         {
             if (type == FigureType.Circle)
             {
-                Button.BackgroundImage = Properties.Resources.rectangle;
+                Button.BackgroundImage = Properties.Resources.circle;
             }
             else if (type == FigureType.Rectangle)
             {
-                Button.BackgroundImage = Properties.Resources.triangle;
+                Button.BackgroundImage = Properties.Resources.rectangle;
             }
             else if (type == FigureType.Triangle)
             {
-                Button.BackgroundImage = Properties.Resources.circle;
+                Button.BackgroundImage = Properties.Resources.triangle;
             }
         }
     }

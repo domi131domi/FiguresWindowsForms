@@ -33,9 +33,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.edycjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonEdit = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,14 +47,11 @@
             this.FiguresListView = new System.Windows.Forms.ListView();
             this.ColumnHeaderType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeaderX = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.columnHeaderY = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderSA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderLabel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderColor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.toolStripButtonDelete = new System.Windows.Forms.ToolStripButton();
-            this.ToolStripMenuItemDelete = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -82,8 +82,20 @@
             // ToolStripMenuItemAdd
             // 
             this.ToolStripMenuItemAdd.Name = "ToolStripMenuItemAdd";
-            this.ToolStripMenuItemAdd.Size = new System.Drawing.Size(224, 26);
+            this.ToolStripMenuItemAdd.Size = new System.Drawing.Size(133, 26);
             this.ToolStripMenuItemAdd.Text = "Dodaj";
+            // 
+            // ToolStripMenuItemEdit
+            // 
+            this.ToolStripMenuItemEdit.Name = "ToolStripMenuItemEdit";
+            this.ToolStripMenuItemEdit.Size = new System.Drawing.Size(133, 26);
+            this.ToolStripMenuItemEdit.Text = "Edytuj";
+            // 
+            // ToolStripMenuItemDelete
+            // 
+            this.ToolStripMenuItemDelete.Name = "ToolStripMenuItemDelete";
+            this.ToolStripMenuItemDelete.Size = new System.Drawing.Size(133, 26);
+            this.ToolStripMenuItemDelete.Text = "Usuń";
             // 
             // toolStrip1
             // 
@@ -120,6 +132,16 @@
             this.toolStripButtonEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonEdit.Click += new System.EventHandler(this.toolStripButtonEdit_Click);
             // 
+            // toolStripButtonDelete
+            // 
+            this.toolStripButtonDelete.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonDelete.Image")));
+            this.toolStripButtonDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonDelete.Name = "toolStripButtonDelete";
+            this.toolStripButtonDelete.Size = new System.Drawing.Size(45, 44);
+            this.toolStripButtonDelete.Text = "Usuń";
+            this.toolStripButtonDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonDelete.Click += new System.EventHandler(this.toolStripButtonDelete_Click);
+            // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Items.AddRange(new object[] {
@@ -138,7 +160,7 @@
             this.editToolStripMenuItem,
             this.removeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(120, 76);
             // 
             // addToolStripMenuItem
             // 
@@ -150,14 +172,14 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
             this.editToolStripMenuItem.Text = "Edytuj";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // removeToolStripMenuItem
             // 
             this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
-            this.removeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
             this.removeToolStripMenuItem.Text = "Usuń";
             this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
@@ -192,15 +214,6 @@
             this.ColumnHeaderX.Text = "X";
             this.ColumnHeaderX.Width = 90;
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 305);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(543, 22);
-            this.statusStrip1.TabIndex = 4;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
             // columnHeaderY
             // 
             this.columnHeaderY.Text = "Y";
@@ -222,27 +235,14 @@
             this.columnHeaderColor.Text = "Color";
             this.columnHeaderColor.Width = 90;
             // 
-            // toolStripButtonDelete
+            // statusStrip1
             // 
-            this.toolStripButtonDelete.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonDelete.Image")));
-            this.toolStripButtonDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonDelete.Name = "toolStripButtonDelete";
-            this.toolStripButtonDelete.Size = new System.Drawing.Size(45, 44);
-            this.toolStripButtonDelete.Text = "Usuń";
-            this.toolStripButtonDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonDelete.Click += new System.EventHandler(this.toolStripButtonDelete_Click);
-            // 
-            // ToolStripMenuItemDelete
-            // 
-            this.ToolStripMenuItemDelete.Name = "ToolStripMenuItemDelete";
-            this.ToolStripMenuItemDelete.Size = new System.Drawing.Size(224, 26);
-            this.ToolStripMenuItemDelete.Text = "Usuń";
-            // 
-            // ToolStripMenuItemEdit
-            // 
-            this.ToolStripMenuItemEdit.Name = "ToolStripMenuItemEdit";
-            this.ToolStripMenuItemEdit.Size = new System.Drawing.Size(224, 26);
-            this.ToolStripMenuItemEdit.Text = "Edytuj";
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 305);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(543, 22);
+            this.statusStrip1.TabIndex = 4;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // FiguresForm
             // 
