@@ -231,5 +231,28 @@ namespace FiguryWinowsForm
         {
             toolStripButtonEdit_Click(sender, e);
         }
+
+        private void Double_click_edit(object sender, EventArgs e)
+        {
+            if(FiguresListView.SelectedItems.Count == 1)
+            {
+                toolStripButtonEdit_Click(sender, e);
+            }
+        }
+
+        private void ToolStripMenuItemAdd_Click(object sender, EventArgs e)
+        {
+            addToolStripMenuItem_Click(sender, e);
+        }
+
+        private void ToolStripMenuItemEdit_Click(object sender, EventArgs e)
+        {
+            toolStripButtonEdit_Click(sender, e);
+        }
+
+        private void ToolStripMenuItemDelete_Click(object sender, EventArgs e)
+        {
+            removeToolStripMenuItem_Click(sender, e);
+        }
     }
 }

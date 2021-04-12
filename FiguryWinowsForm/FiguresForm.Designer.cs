@@ -82,20 +82,23 @@
             // ToolStripMenuItemAdd
             // 
             this.ToolStripMenuItemAdd.Name = "ToolStripMenuItemAdd";
-            this.ToolStripMenuItemAdd.Size = new System.Drawing.Size(133, 26);
+            this.ToolStripMenuItemAdd.Size = new System.Drawing.Size(224, 26);
             this.ToolStripMenuItemAdd.Text = "Dodaj";
+            this.ToolStripMenuItemAdd.Click += new System.EventHandler(this.ToolStripMenuItemAdd_Click);
             // 
             // ToolStripMenuItemEdit
             // 
             this.ToolStripMenuItemEdit.Name = "ToolStripMenuItemEdit";
-            this.ToolStripMenuItemEdit.Size = new System.Drawing.Size(133, 26);
+            this.ToolStripMenuItemEdit.Size = new System.Drawing.Size(224, 26);
             this.ToolStripMenuItemEdit.Text = "Edytuj";
+            this.ToolStripMenuItemEdit.Click += new System.EventHandler(this.ToolStripMenuItemEdit_Click);
             // 
             // ToolStripMenuItemDelete
             // 
             this.ToolStripMenuItemDelete.Name = "ToolStripMenuItemDelete";
-            this.ToolStripMenuItemDelete.Size = new System.Drawing.Size(133, 26);
+            this.ToolStripMenuItemDelete.Size = new System.Drawing.Size(224, 26);
             this.ToolStripMenuItemDelete.Text = "Usuń";
+            this.ToolStripMenuItemDelete.Click += new System.EventHandler(this.ToolStripMenuItemDelete_Click);
             // 
             // toolStrip
             // 
@@ -194,6 +197,7 @@
             this.columnHeaderColor});
             this.FiguresListView.ContextMenuStrip = this.contextMenuStrip;
             this.FiguresListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FiguresListView.FullRowSelect = true;
             this.FiguresListView.HideSelection = false;
             this.FiguresListView.Location = new System.Drawing.Point(0, 0);
             this.FiguresListView.Name = "FiguresListView";
@@ -202,6 +206,7 @@
             this.FiguresListView.UseCompatibleStateImageBehavior = false;
             this.FiguresListView.View = System.Windows.Forms.View.Details;
             this.FiguresListView.SelectedIndexChanged += new System.EventHandler(this.FiguresForm_SelectedIndexChanged);
+            this.FiguresListView.DoubleClick += new System.EventHandler(this.Double_click_edit);
             // 
             // ColumnHeaderType
             // 
@@ -238,9 +243,9 @@
             // statusStrip
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip.Location = new System.Drawing.Point(0, 303);
+            this.statusStrip.Location = new System.Drawing.Point(0, 305);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(543, 24);
+            this.statusStrip.Size = new System.Drawing.Size(543, 22);
             this.statusStrip.TabIndex = 4;
             this.statusStrip.Text = "statusStrip1";
             // 
